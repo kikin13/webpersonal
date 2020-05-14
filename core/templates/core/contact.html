@@ -1,12 +1,11 @@
-<h1>Mi web personal</h1>
-<ul>
-    <li> <a href="/">Portada</a> </li>
-    <li> <a href="/about-me/">Acerca de</a> </li>
-    <li> <a href="/portfolio/">Portafolio</a> </li>
-    <li> <a href="/contact/">Contacto</a> </li>
-</ul>
+{% extends 'core/base.html' %}  <!--Extender el menu de base.html a todas las paginas-->
 
-<h2>Contacto</h2>
-        <p>WhatsApp: 276-133-54-90<br>
-        correo electronico: cervtsluis13@gmail.com</p>
+{% block title %}Contacto{% endblock %} <!--Cambiar titulo dinamicamente-->
+
+{% block content %} <!--Mostrar contenido de la pagina-->
+
+    <p>WhatsApp: 276-133-54-90<br>
+    correo electronico: cervtsluis13@gmail.com</p>
+
+{% endblock %}
         

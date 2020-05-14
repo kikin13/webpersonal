@@ -1,12 +1,21 @@
 {% extends 'core/base.html' %}  <!--Extender el menu de base.html a todas las paginas-->
 
-
+<!-- Bloque titulo -->
 {% block title %}Portada{% endblock %} <!--Cambiar titulo dinamicamente-->
 
+<!--Bloque de imagen-->
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+<!-- Bloque header -->
+{% block headers %} 
+<h1>Juan Pérez</h1>
+<span class="subheading">Ingeniero Industrial</span>
+{% endblock %}
+
+<!-- Bloque contenido-->
 {% block content %} <!--Mostrar contenido de la pagina-->
 
-<h2>Portada</h2>
-<p>Esto es la portada</p>
+
 
 {% endblock %}
 
